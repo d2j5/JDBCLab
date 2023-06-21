@@ -41,6 +41,7 @@ public class DatabaseConnector {
                 if (rs != null) rs.close();
                 if (stmt != null) stmt.close();
                 if (connection != null) connection.close();
+                System.out.println("Connection Closed");
             } catch (SQLException e) {
                 e.printStackTrace();
             }
